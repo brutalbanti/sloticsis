@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/game.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header grey">
+            <div class="header__content">
+                <div class="header__top">
+                    <div class="header__burger" id="burger-menu">
+                        <img src="../assets/header/burger.svg" alt="">
+                    </div>
+                    <a href="/" class="header__logo">
+                        <img src="../assets/header/logo-white.svg" alt="" class="header__logo-img">
+                    </a>
+                    <a href="/" class="header__logo-mobile">
+                        <img src="../assets/header/logo-white.svg" alt="" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <div class="header-nav__top">
+                            <img src="../assets/header/close.svg" alt="" class="header-nav__close" id="close-nav">
+                            <a href="/" class="header__logo-mobile">
+                                <img src="../assets/header/logo-white.svg" alt="" class="header__logo-img">
+                            </a>
+                        </div>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="/" class="header__link mobile">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="/about-us/" class="header__link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="/contact/" class="header__link">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="/privacy-policy/" class="header__link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+           <section class="section__game">
+            <div class="game__container">
+                <iframe id="gameIframe" src="" frameborder="0"></iframe>
+            </div>
+           </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <a href="" class="footer__logo">
+                        <img src="../assets/header/logo-white.svg" alt="" class="footer__logo-img">
+                    </a>
+                    <p class="footer__text">
+                        This free online table game is for adults only. Because our games are completely free, you don't
+                        need to use real money to play.
+                    </p>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__root">
+                        All rights reserved sloticsis.com © 2022
+                    </p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="/about-us/" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/contact/" class="footer__link">Contact Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/privacy-policy/" class="footer__link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const gameUrl = decodeURIComponent(hash);
+                document.getElementById('gameIframe').src = gameUrl;
+            }
+        });
+    </script>
+    <script src="../js/burger.js"></script>
+</body>
+
+</html>

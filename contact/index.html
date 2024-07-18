@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/globals.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/extra-header.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header grey">
+            <div class="header__content">
+                <div class="header__top">
+                    <div class="header__burger" id="burger-menu">
+                        <img src="../assets/header/burger.svg" alt="">
+                    </div>
+                    <a href="/" class="header__logo">
+                        <img src="../assets/header/logo-white.svg" alt="" class="header__logo-img">
+                    </a>
+                    <a href="/" class="header__logo-mobile">
+                        <img src="../assets/header/logo-white.svg" alt="" class="header__logo-img">
+                    </a>
+                    <nav class="header__nav">
+                        <div class="header-nav__top">
+                            <img src="../assets/header/close.svg" alt="" class="header-nav__close" id="close-nav">
+                            <a href="/" class="header__logo-mobile">
+                                <img src="../assets/header/logo-white.svg" alt="" class="header__logo-img">
+                            </a>
+                        </div>
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="/" class="header__link mobile">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="/about-us/" class="header__link">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="/contact/" class="header__link">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="header__item">
+                                <a href="/privacy-policy/" class="header__link">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <section class="extra-header">
+                <div class="extra-header__container">
+                    <h6 class="extra-header__label">
+                        Sloticsis free online casino
+                    </h6>
+                    <h1 class="extra-header__title">
+                        Contact Us
+                    </h1>
+                </div>
+            </section>
+            <section class="page__contact">
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <div class="contact__left">
+                            <form action="" class="contact__form" id="contactForm">
+                                <label for="fullName" class="contact__label">
+                                    Full Name
+                                    <input type="text" class="contact__input" id="fullName" placeholder="Your Full Name">
+                                </label>
+                                <label for="email" class="contact__label">
+                                    Your Email
+                                    <input type="email" class="contact__input" id="email" placeholder="email@example.com">
+                                </label>
+                                <label for="subject" class="contact__label">
+                                    Subject
+                                    <input type="text" class="contact__input" id="subject" placeholder="Write Your Subject">
+                                </label>
+                                <label for="message" class="contact__label">
+                                    Message (optional)
+                                    <textarea id="message" class="contact__textarea" placeholder="Write Your Message"></textarea>
+                                </label>
+                                <div id="fullNameError" class="form-errors">
+                                    <img src="../assets/contact/error.svg" alt="">
+                                    This field is required
+                                </div>
+                                <div id="emailError" class="form-errors">
+                                    <img src="../assets/contact/error.svg" alt="">
+                                    Please enter a valid email address
+                                </div>
+                                <div id="subjectError" class="form-errors">
+                                    <img src="../assets/contact/error.svg" alt="">
+                                    This field is required
+                                </div>
+                                <button class="contact__btn" type="submit">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="contact__right">
+                            <img src="../assets/contact/01.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="popup" class="popup">
+                <div class="popup__content">
+                    <button class="popup__close" id="popupClose"><img src="../assets/contact/close.svg" alt=""></button>
+                    <img src="../assets/contact/success.svg" alt="Success Icon" class="popup__icon">
+                    <h2 class="popup__title">Thank you for your message</h2>
+                    <p class="popup__subtitle">We will contact you shortly</p>
+                    <button class="popup__btn" id="popupContinue">Continue</button>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__top">
+                    <a href="" class="footer__logo">
+                        <img src="../assets/header/logo-white.svg" alt="" class="footer__logo-img">
+                    </a>
+                    <p class="footer__text">
+                        This free online table game is for adults only. Because our games are completely free, you don't
+                        need to use real money to play.
+                    </p>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__root">
+                        All rights reserved sloticsis.com © 2022
+                    </p>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="/about-us/" class="footer__link">About Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/contact/" class="footer__link">Contact Us</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="/privacy-policy/" class="footer__link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../js/burger.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
